@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body style="background-color:red;">
+
+<body background="oldd.html">
+
+<h1> <font color="White"> Sick Note </font> </h1>
+<h2> <font color="White"> Dear School Nurse: </font> </h2>
+
+Noun1: <input type="text" id="noun1"> <br>
+Noun2: <input type="text" id="noun2"><br>
+Noun3: <input type="text" id="noun3"><br>
+Adjective1: <input type="text" id="adjective1"><br>
+Adjective2: <input type="text" id="adjective2"><br>
+Noun4: <input type="text" id="noun4"><br>
+Noun5: <input type="text" id="noun5"><br>
+Noun6: <input type="text" id="noun6"><br>
+
+<button id="launch">launch</button>
+<div id="story"></div>
+
+
+<script>
+var noun1 = document.querySelector("#noun1");
+var noun2 = document.querySelector("#noun2");
+var noun3= document.querySelector("#noun3");
+var adjective1 = document.querySelector("#adjective1");
+var adjective2 = document.querySelector("#adjective2");
+var noun4= document.querySelector("#noun4");
+var noun5= document.querySelector("#noun5");
+var noun6= document.querySelector("#noun6");
+var story = document.querySelector("#story");
+var launch = document.querySelector("#launch");
+launch.addEventListener("click", writeStory, false);
+
+
+function writeStory(){
+var launchStory = "";
+launchedStory += noun1.value + " will not be attending school todaym";
+launchedStory += " He/she has come down with a case of" + noun2.value + " ";
+launchedStory += "<p> and has horrible" + noun3.value + "</p>";
+launchedStory += "<p> and a/an" + adjective1.value + "</p>";
+launchedStory += "<p> fever. We have made an appointment with the" + adjective2.value + "</p>";
+launchedStory += "<p> Dr." + noun4.value + ". </p>";
+launchedStory += "<p> who studied for many years in" + noun5.value + "</p>";
+launchedStory += "<p> and has 5 degrees in pediatrics. He will send you all the" +" " +
+"information you need. Thank you! Sincerely, Mrs. " + noun6.value + "</p>"
+story.innerHTML = launchedStory;
+}
+</script>
+</body>
+</html>
